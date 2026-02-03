@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Unity Swimming School Bali | Kids & Adults | Bukit • Sanur • Ubud</title>
+  <meta name="description" content="Unity Swimming School in Bali. Private & group swimming lessons for kids and adults in Bukit, Sanur, Ubud. Certified coaches. Ocean swimming. WhatsApp: +62 821-4723-2648" />
+  <meta name="robots" content="index,follow" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E%F0%9F%8F%8A%3C/text%3E%3C/svg%3E">
+  <meta property="og:title" content="Unity Swimming School Bali" />
+  <meta property="og:description" content="Private & group swimming lessons for kids and adults. Bukit • Sanur • Ubud. WhatsApp: +62 821-4723-2648" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
+
+  <style>
+    :root{
+      --bg:#071622;
+      --card:#0b2233;
+      --muted:#b8c9d6;
+      --text:#eaf3f8;
+      --accent:#39d2c0;
+      --accent2:#ff5fa2;
+      --line:rgba(255,255,255,.12);
+      --shadow: 0 14px 40px rgba(0,0,0,.35);
+      --radius: 18px;
+      --max: 1080px;
+      --pad: 18px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Helvetica Neue", sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(1200px 700px at 20% 10%, rgba(57,210,192,.18), transparent 60%),
+        radial-gradient(900px 600px at 80% 20%, rgba(255,95,162,.14), transparent 55%),
+        linear-gradient(180deg, #041018, #06131d 30%, #041018);
+      line-height:1.5;
+    }
+    a{color:inherit}
+    .wrap{max-width:var(--max); margin:0 auto; padding: 22px var(--pad) 56px;}
+    .topbar{
+      display:flex; align-items:center; justify-content:space-between;
+      gap:14px; padding:10px 0 16px;
+    }
+    .brand{
+      display:flex; align-items:center; gap:10px;
+      font-weight:800; letter-spacing:.2px;
+    }
+    .dot{
+      width:38px; height:38px; border-radius:12px;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      box-shadow: 0 12px 24px rgba(0,0,0,.25);
+      display:grid; place-items:center; font-size:18px;
+    }
+    .nav{
+      display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end;
+    }
+    .pill{
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      padding:10px 12px; border-radius:999px;
+      text-decoration:none; font-weight:600; font-size:14px;
+    }
+    .pill:hover{background: rgba(255,255,255,.07)}
+    .hero{
+      margin-top:14px;
+      border:1px solid var(--line);
+      background: linear-gradient(180deg, rgba(11,34,51,.75), rgba(11,34,51,.35));
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .hero-inner{
+      padding: 22px;
+      display:grid;
+      grid-template-columns: 1.25fr .75fr;
+      gap:18px;
+    }
+    @media (max-width: 860px){
+      .hero-inner{grid-template-columns: 1fr; }
+    }
+    h1{margin:0 0 10px; font-size: 42px; line-height:1.1;}
+    @media (max-width: 520px){ h1{font-size:34px;} }
+    .sub{color:var(--muted); font-size:16px; margin:0 0 16px;}
+    .badges{display:flex; gap:10px; flex-wrap:wrap; margin: 12px 0 18px;}
+    .badge{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:10px 12px; border-radius:999px;
+      background: rgba(57,210,192,.12);
+      border:1px solid rgba(57,210,192,.25);
+      font-weight:700; font-size:14px;
+    }
+    .badge.pink{
+      background: rgba(255,95,162,.10);
+      border:1px solid rgba(255,95,162,.22);
+    }
+    .cta-row{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px;}
+    .btn{
+      text-decoration:none; font-weight:800;
+      padding:12px 14px; border-radius: 14px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.06);
+      display:inline-flex; align-items:center; gap:10px;
+    }
+    .btn.primary{
+      background: linear-gradient(135deg, rgba(57,210,192,.95), rgba(57,210,192,.65));
+      border:0; color:#041018;
+    }
+    .btn.primary:hover{filter:brightness(1.03)}
+    .btn:hover{background: rgba(255,255,255,.09)}
+    .card{
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      border-radius: var(--radius);
+      padding: 16px;
+    }
+    .kpi{
+      display:grid; gap:10px;
+    }
+    .kpi .row{
+      display:flex; justify-content:space-between; gap:10px;
+      padding: 10px 12px; border-radius: 14px;
+      background: rgba(0,0,0,.18);
+      border:1px solid rgba(255,255,255,.06);
+      font-size:14px;
+    }
+    .kpi b{font-weight:800}
+    .section{margin-top:18px;}
+    .grid{
+      display:grid; gap:14px;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media (max-width: 980px){ .grid{grid-template-columns: 1fr;} }
+    h2{margin:0 0 10px; font-size: 22px;}
+    .muted{color:var(--muted)}
+    .list{margin:0; padding-left:18px; color:var(--muted)}
+    .list li{margin:6px 0}
+    .split{
+      display:grid; gap:14px;
+      grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: 980px){ .split{grid-template-columns: 1fr;} }
+    .lang{
+      display:flex; gap:8px; align-items:center;
+    }
+    .lang button{
+      cursor:pointer; font-weight:800; font-size:13px;
+      padding:8px 10px; border-radius: 999px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      color:var(--text);
+    }
+    .lang button.active{
+      background: rgba(57,210,192,.18);
+      border-color: rgba(57,210,192,.35);
+    }
+    .faq details{
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      border-radius: 14px;
+      padding: 12px 14px;
+      margin: 10px 0;
+    }
+    .faq summary{
+      cursor:pointer; font-weight:800;
+    }
+    footer{
+      margin-top:26px;
+      color:rgba(255,255,255,.6);
+      font-size:13px;
+      display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap;
+      padding-top:16px;
+      border-top:1px solid var(--line);
+    }
+    .tiny{font-size:12px; color:rgba(255,255,255,.55)}
+    .hide{display:none !important;}
+    .mono{font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;}
+  </style>
+
+  <!-- LocalBusiness structured data for Google -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SportsActivityLocation",
+    "name": "Unity Swimming School Bali",
+    "description": "Private & group swimming lessons for kids and adults in Bukit, Sanur and Ubud. Certified coaches. Ocean swimming.",
+    "areaServed": ["Bukit Peninsula, Bali", "Sanur, Bali", "Ubud, Bali"],
+    "telephone": "+62 821-4723-2648",
+    "sameAs": ["https://www.instagram.com/swimming.unity.bali/"]
+  }
+  </script>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <div class="topbar">
+      <div class="brand">
+        <div class="dot">🏊</div>
+        <div>
+          <div style="font-size:15px; font-weight:900;">UNITY</div>
+          <div class="tiny">Swimming School • Bali</div>
+        </div>
+      </div>
+
+      <div class="nav">
+        <a class="pill" href="#programs">Programs</a>
+        <a class="pill" href="#areas">Areas</a>
+        <a class="pill" href="#contact">Contact</a>
+        <a class="pill" href="#faq">FAQ</a>
+      </div>
+    </div>
+
+    <div class="hero" id="top">
+      <div class="hero-inner">
+
+        <div>
+          <div class="lang" aria-label="Language switch">
+            <button id="btnEN" class="active" type="button">EN</button>
+            <button id="btnRU" type="button">RU</button>
+          </div>
+
+          <!-- EN -->
+          <div id="EN">
+            <h1>Unity Swimming School in Bali</h1>
+            <p class="sub">
+              Private & group swimming lessons for <b>kids and adults</b> in <b>Bukit • Sanur • Ubud</b>.
+              Certified coaches. Safety-first approach. Ocean swimming for confident swimmers.
+            </p>
+
+            <div class="badges">
+              <div class="badge">✅ Private & Group</div>
+              <div class="badge pink">✅ Kids & Adults</div>
+              <div class="badge">✅ Certified Coaches</div>
+              <div class="badge pink">✅ Ocean Swimming</div>
+            </div>
+
+            <div class="cta-row">
+              <a class="btn primary" id="waBtnEN" href="#" rel="nofollow">WhatsApp • Book a lesson</a>
+              <a class="btn" href="https://www.instagram.com/swimming.unity.bali/" target="_blank" rel="nofollow noopener">Instagram • @swimming.unity.bali</a>
+            </div>
+
+            <p class="tiny" style="margin-top:12px;">
+              Fast reply • Flexible schedule • Training at villa pools or selected pools.
+            </p>
+          </div>
+
+          <!-- RU -->
+          <div id="RU" class="hide">
+            <h1>Школа плавания Unity на Бали</h1>
+            <p class="sub">
+              Персональные и групповые занятия для <b>детей и взрослых</b> в районах <b>Букит • Санур • Убуд</b>.
+              Сертифицированные тренеры. Безопасность — на первом месте. Заплывы в океане для уверенных пловцов.
+            </p>
+
+            <div class="badges">
+              <div class="badge">✅ Индивидуально и в группе</div>
+              <div class="badge pink">✅ Дети и взрослые</div>
+              <div class="badge">✅ Сертифицированные тренеры</div>
+              <div class="badge pink">✅ Заплывы в океане</div>
+            </div>
+
+            <div class="cta-row">
+              <a class="btn primary" id="waBtnRU" href="#" rel="nofollow">WhatsApp • Записаться</a>
+              <a class="btn" href="https://www.instagram.com/swimming.unity.bali/" target="_blank" rel="nofollow noopener">Instagram • @swimming.unity.bali</a>
+            </div>
+
+            <p class="tiny" style="margin-top:12px;">
+              Быстрый ответ • Гибкое расписание • Занятия у вас на вилле или в выбранных бассейнах.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="kpi">
+            <div class="row"><span>WhatsApp</span><b class="mono">+62 821-4723-2648</b></div>
+            <div class="row"><span>Areas</span><b>Bukit • Sanur • Ubud</b></div>
+            <div class="row"><span>Formats</span><b>Private • Group</b></div>
+            <div class="row"><span>Programs</span><b>Kids • Adults</b></div>
+          </div>
+          <div style="margin-top:12px" class="tiny">
+            Tip: Save our WhatsApp and message “UNITY” to book.
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="section grid" id="programs">
+      <div class="card">
+        <h2>Programs</h2>
+        <p class="muted">Choose the format that fits your goal and comfort level.</p>
+        <ul class="list">
+          <li>Learn to swim (beginners)</li>
+          <li>Confidence & water safety</li>
+          <li>Technique improvement</li>
+          <li>Endurance & fitness swimming</li>
+          <li>Ocean swimming (for confident swimmers)</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>For Kids</h2>
+        <p class="muted">Gentle progress, safety and fun — without pressure.</p>
+        <ul class="list">
+          <li>Fear of water support</li>
+          <li>Breathing & floating basics</li>
+          <li>Stroke foundations</li>
+          <li>Safety rules for pools & ocean</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>For Adults</h2>
+        <p class="muted">From zero to confident swimming and better technique.</p>
+        <ul class="list">
+          <li>Beginners welcome</li>
+          <li>Technique fixes & drills</li>
+          <li>Fitness swimming</li>
+          <li>Ocean confidence (advanced)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section split" id="areas">
+      <div class="card">
+        <h2>Service Areas</h2>
+        <p class="muted">
+          We serve families across South & Central Bali. If you are nearby — message us, we’ll confirm availability.
+        </p>
+        <ul class="list">
+          <li><b>Bukit</b>: Ungasan, Pecatu, Jimbaran, Uluwatu, Kutuh, Nusa Dua</li>
+          <li><b>Sanur</b> and nearby areas</li>
+          <li><b>Ubud</b> and nearby areas</li>
+        </ul>
+        <p class="tiny" style="margin-top:10px;">
+          Travel fee may apply depending on distance and pool access.
+        </p>
+      </div>
+
+      <div class="card" id="contact">
+        <h2>Contact & Booking</h2>
+        <p class="muted">Send us a message and we’ll recommend the best option.</p>
+
+        <div class="card" style="background: rgba(0,0,0,.18); border-color: rgba(255,255,255,.08);">
+          <div class="row" style="display:flex; justify-content:space-between; gap:10px;">
+            <span>WhatsApp</span>
+            <b class="mono">+62 821-4723-2648</b>
+          </div>
+          <div class="row" style="display:flex; justify-content:space-between; gap:10px; margin-top:8px;">
+            <span>Instagram</span>
+            <b>@swimming.unity.bali</b>
+          </div>
+        </div>
+
+        <div class="cta-row" style="margin-top:12px;">
+          <a class="btn primary" id="waBtn2EN" href="#" rel="nofollow">WhatsApp • Quick booking</a>
+          <a class="btn" href="https://www.instagram.com/swimming.unity.bali/" target="_blank" rel="nofollow noopener">Open Instagram</a>
+        </div>
+
+        <p class="tiny" style="margin-top:10px;">
+          To book faster, include: area, age, swimming level, private/group, preferred time.
+        </p>
+      </div>
+    </div>
+
+    <div class="section card faq" id="faq">
+      <h2>FAQ</h2>
+
+      <details>
+        <summary>Do you teach at private villa pools?</summary>
+        <div class="muted" style="margin-top:8px;">Yes. We can come to your villa pool if it’s suitable and safe for training.</div>
+      </details>
+
+      <details>
+        <summary>Do you have group classes?</summary>
+        <div class="muted" style="margin-top:8px;">Yes. We offer both private and group sessions depending on schedule and location.</div>
+      </details>
+
+      <details>
+        <summary>Can you help with fear of water?</summary>
+        <div class="muted" style="margin-top:8px;">Yes. We work gently and step-by-step to build confidence and comfort in the water.</div>
+      </details>
+
+      <details>
+        <summary>Do you do ocean swimming?</summary>
+        <div class="muted" style="margin-top:8px;">Yes — for confident swimmers, with safety rules and appropriate conditions.</div>
+      </details>
+
+      <div class="tiny" style="margin-top:12px;">
+        Pricing depends on location, format (private/group), and travel. Message us for current rates.
+      </div>
+    </div>
+
+    <footer>
+      <div>© <span id="year"></span> Unity Swimming School Bali</div>
+      <div class="tiny">WhatsApp: +62 821-4723-2648 • Instagram: @swimming.unity.bali</div>
+    </footer>
+  </div>
+
+  <script>
+    const phone = "6282147232648"; // no +, no spaces
+    const waTextEN = encodeURIComponent("Hi! I want to book a swimming lesson with Unity. Area: ___ / Age: ___ / Level: ___ / Private or group: ___ / Preferred time: ___");
+    const waTextRU = encodeURIComponent("Привет! Хочу записаться на плавание в Unity. Район: ___ / Возраст: ___ / Уровень: ___ / Индивидуально или группа: ___ / Удобное время: ___");
+
+    const waLinkEN = `https://wa.me/${phone}?text=${waTextEN}`;
+    const waLinkRU = `https://wa.me/${phone}?text=${waTextRU}`;
+
+    document.getElementById("waBtnEN").href = waLinkEN;
+    document.getElementById("waBtn2EN").href = waLinkEN;
+    document.getElementById("waBtnRU").href = waLinkRU;
+
+    const EN = document.getElementById("EN");
+    const RU = document.getElementById("RU");
+    const btnEN = document.getElementById("btnEN");
+    const btnRU = document.getElementById("btnRU");
+
+    btnEN.addEventListener("click", () => {
+      EN.classList.remove("hide");
+      RU.classList.add("hide");
+      btnEN.classList.add("active");
+      btnRU.classList.remove("active");
+      document.documentElement.lang = "en";
+    });
+
+    btnRU.addEventListener("click", () => {
+      RU.classList.remove("hide");
+      EN.classList.add("hide");
+      btnRU.classList.add("active");
+      btnEN.classList.remove("active");
+      document.documentElement.lang = "ru";
+    });
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
